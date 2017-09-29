@@ -171,17 +171,9 @@ def runViewshed(file, output):
         except :
             print "viewshed {0} encountered an error".str(format(self.index))
 
-        # try:
-        #    write=viewshed(line).WriteStats(basic= True,composition= True,write=True)
-        #    outFile.write(write)
-        # except:
-        #    error="Viewshed {0} were not processed".format(line.split(',')[2]) + "\n"
-        #    outFile.write(error)
-        #    print error
-
     outFile.close()
 
 if __name__ == '__main__':
 
-    runViewshed("D:\\ptabriz\\US_viewshed_proj\\Pano_filtered_after_7105.txt","D:\\ptabriz\\US_viewshed_proj\\test_2.txt")
-    # combineVshed ('D:\\ptabriz\\scraping\\points_coords.txt')
+    runViewshed("input_coords.txt","output_metrics.txt")
+
